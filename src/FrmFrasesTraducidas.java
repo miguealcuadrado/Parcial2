@@ -74,11 +74,12 @@ public class FrmFrasesTraducidas extends JFrame {
         btnTraducir.setBounds(20, 110, 85, 25);
         getContentPane().add(btnTraducir);
 
-        String ArchivoImagen = "src/iconos/reproducir.png";
+        
         
 
         JButton btnReproducirSonido = new JButton("");
         btnReproducirSonido.setBounds(450, 160, 60, 60);
+        btnReproducirSonido.setIcon(new ImageIcon(getClass().getResource("/Imagenes/bocina1.jpg")));
         getContentPane().add(btnReproducirSonido);
 
         txtTraduccion = new JTextField();
@@ -105,10 +106,7 @@ public class FrmFrasesTraducidas extends JFrame {
         });
     } 
 
-    private Icon ImageIcon(URL resource) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'ImageIcon'");
-    }
+   
 
     private void cargarDatos() {
         ObjectMapper objectMapper = new ObjectMapper();
